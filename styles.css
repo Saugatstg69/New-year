@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #85c1e9, #f8c471, #aed6f1, #f1948a);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative; /* Add this line */
+}
+
+header {
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+#newYearMessage {
+    margin: 20px;
+    margin-top: -40px;
+}
+
+#greeting {
+    font-size: 36px;
+    color: #fff;
+}
+
+#regularText {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+#messageLink {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#messageLink:hover {
+    font-size: 26px;
+}
+
+#redHeart {
+    color: #e44d26;
+}
+
+#message {
+    font-size: 35px;
+    color: #fff;
+}
+
+/* Fireworks styles */
+.firework {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('firework.png'); /* Replace with your firework image URL */
+    background-size: cover;
+    animation: fireworks 5s infinite; /* Adjust duration if needed */
+}
+
+@keyframes fireworks {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-200px) rotate(180deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0) rotate(360deg);
+        opacity: 0;
+    }
+}
